@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kampus RoR</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "shared/header" %>
+    <main>
+      <div class="container">
+        <%= render "shared/message" %>
+        <%= yield %>    
+      </div>
+    </main>
+    <%= render "shared/footer" %>
+  </body>
+  <script type="script/javascripts">
+    $(".button-collapse").sideNav();
+  </script>
+</html>
